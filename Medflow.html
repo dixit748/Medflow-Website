@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Medflow — Trusted Healthcare</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="overlay">
+      <nav class="nav">
+        <div class="logo">Medflow</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero">
+        <h1>Welcome to <span class="typing"></span></h1>
+        <p>Modern healthcare. Compassionate care.</p>
+        <a class="btn" href="#contact">Get In Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About Medflow</h2>
+      <p>Medflow ek modern healthcare provider hai jo patients ko quality, convenience aur compassion ke saath medical services deta hai.</p>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Our Services</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>General Checkup</h3>
+          <p>Regular health screenings and preventive care.</p>
+        </div>
+        <div class="card">
+          <h3>Specialist Consultation</h3>
+          <p>Experienced specialists across multiple departments.</p>
+        </div>
+        <div class="card">
+          <h3>Emergency Care</h3>
+          <p>24/7 urgent care and quick response.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <form id="contactForm" onsubmit="return handleSubmit(event)">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="formMsg" class="form-msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Medflow. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
